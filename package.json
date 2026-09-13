@@ -17,5 +17,14 @@
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.9.5",
     "multer": "^2.3.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvanishSingh09/scatch-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AvanishSingh09/scatch-project/issues"
+  },
+  "homepage": "https://github.com/AvanishSingh09/scatch-project#readme"
 }
