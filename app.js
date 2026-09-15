@@ -4,6 +4,10 @@ const bcrypt = require("bcrypt");
 const cookieParser = require("cookie-parser");
 const jwt = require("jsonwebtoken");
 const path = require("path");
+const ownerRouter = require("./routes/ownerRouter");
+const productsRouter = require("./routes/productsRouter");
+const usersRouter = require("./routes/usersRouter");
+
 const db = require("./config/moongoose-connection");
 
 const app = express();
@@ -29,10 +33,11 @@ app.set("view engine", "ejs");
 // =======================
 // Basic Route
 // =======================
+app.use("/owner",ownerRouter);
+app.use("/users",usersRouter);
+app.use("/products",productsRouter);  
 
-app.get("/", (req, res) => {
-    res.send("Server is running");
-});
+
 
 // =======================
 // Authentication Example
